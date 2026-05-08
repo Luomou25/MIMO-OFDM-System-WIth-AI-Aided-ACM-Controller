@@ -1,0 +1,31 @@
+seed: 42
+device: cuda
+carrier_frequency_hz: 3500000000.0
+subcarrier_spacing_hz: 30000.0
+fft_size: 64
+num_ofdm_symbols: 14
+cyclic_prefix_length: 16
+pilot_ofdm_symbol_indices: (2, 11)
+num_guard_carriers: (0, 0)
+dc_null: False
+num_tx: 2
+num_streams_per_tx: 1
+num_bs_ant: 2
+num_bits_per_symbol: 2
+coderate: 0.5
+code_family: ldpc
+channel_type: cdl
+channel_profile: A
+delay_spread_s: 1e-07
+min_speed_mps: 0.0
+max_speed_mps: 0.0
+direction: uplink
+estimator_type: ls
+interpolation_type: lin
+lmmse_order: t-f-s
+decoder_iterations: 12
+batch_size: 64
+eval_batch_size: 128
+output_dir: d:\MaCom\comsys\outputs\formal_v2_qpsk_r12
+modulation_name: QPSK
+mimo_name: 2x2
