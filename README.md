@@ -2,7 +2,6 @@
 
 This folder contains the two AI modules requested by the project:
 
-- `dl_mimo_detector.py`: convolutional neural receiver that predicts coded-bit LLRs from the received OFDM grid and CSI
 - `train_dl_mimo.py`: training and BER comparison script for the DL-based MIMO detector
 - `acm_controller.py`: offline data generation and MCS classifier for AI-driven adaptive coding and modulation
 - `train_acm.py`: dataset generation, ACM training, and throughput evaluation
@@ -10,7 +9,6 @@ This folder contains the two AI modules requested by the project:
 ## Example commands
 
 ```powershell
-conda run -n Sionna python AI-AIDED/train_dl_mimo.py --epochs 5 --steps-per-epoch 100
 conda run -n Sionna python AI-AIDED/train_acm.py --num-samples 40 --epochs 120
 ```
 
